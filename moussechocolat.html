@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rad-Ops">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Mousse au chocolat</title>
+    <link rel="icon" type="png" href="./img/logo_small.png" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="global-style.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="img_logo" src="./img/logo.png" alt="logo_kochwelt" />
+            </a>
+            <ul id="openBurger" class="nav_links_ul toggle_burger_menu">
+                <button class="close_button" onclick="toggleBurger()">&#x24E7;</button>
+                <li>
+                    <a class="anchor" href="./index.html">Start</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./pasta.html">Rezept des Tages</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./kontakt-formular.html">Kontakt</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./impressum.html">Impressum</a>
+                </li>
+            </ul>
+            <button id="openButton" class="burger_menu" onclick="toggleBurger()">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_recipe_continer">
+            <section class="section1_recipe">
+                <h2 class="h2_recipe">Mousse au chocolat</h2>
+
+                <img class="recipe_img" src="./img/dessert-4034053_1280.jpg" alt="mousse-au-chocolat" />
+
+                <div class="clock_brain_calendar">
+                    <span class="span_clock"><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung" />25 Min.</span>
+                    <span class="span_brain"><img class="time" src="img/brain-solid.svg"
+                            alt="schwierigkeitsgrad" />simpel</span>
+                    <span class="span_calendar"><img class="time" src="img/calendar-alt-regular.svg"
+                            alt="Kalender" />11.10.2025</span>
+                </div>
+            </section>
+
+            <div class="dividing_line"></div>
+
+            <section>
+                <div class="input_portions">
+                    <span class="ingredients_for_portion">Zutaten für</span><input type="number" step="1" max="20"
+                        min="1" value="1" required />
+                    <button class="main_button">Portionen</button>
+                </div>
+                <table>
+                    <tbody>
+                        <tr class="table_white">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>200</td>
+                            <td>g &nbsp; Bitterschokolade (75%Kakaoanteil)</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>2</td>
+                            <td>&nbsp;Eier</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>200</td>
+                            <td>g&nbsp; Schlagsahne</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>Prise Salz</td>
+
+
+                        </tr>
+                        <tr class="table_gray">
+                            <td>Schokolade zum Raspeln (optimal)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="h3_recipe">Zubereitung</h3>
+                <div class="preparation_time">
+                    <span class="span_clock"><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung span_clock" />25 Min.</span>
+                    <span class="preparation_clock span_clock "><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung" />Kühlzeit 2.5 Std.</span>
+                    <span class="preparation_clock span_clock"><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung" />Gesamt: 2.5 Std.</span>
+                </div>
+                <p class="p_preparation"> Im ersten Schritt trennt du die Eier und fängst Eigelb und Eiweiß in separaten
+                    Gefäßen auf. Gehe hier vorsichtig vor: Es sollte kein Tropfen Eigelb in das Eiweiß gelangen, sonst
+                    wird der Eischnee später
+                    nichts. Salz in das Eiweiß geben, die Masse mit dem Handrührgerät zu Eischnee schlagen und in den
+                    Kühlschrankstellen.In einer weiteren Schüssel schlägst du die Sahne steif und stellst die Masse
+                    anschließend ebenfalls
+                    in den Kühlschrank. Schokolade in Stücke brechen und in einem Wasserbad schmelzen. Wenn du kein
+                    Wasserbad hast, kannst du
+                    alternativ eine große Tasse in einen Topf mit siedendem Wasser stellen und die Masse darin
+                    schmelzen. Achte dabei darauf, dass die Schokolade nur warm und nicht heiß wird. Außerdem sollte
+                    kein Wasser
+                    hineinkommen Jetzt lässt du die Schokolade etwas abkühlen und schlägst zunächst das Eigelb auf. In
+                    das cremige
+                    Eigelb gibst du dann die lauwarme Schokolade und rührst sie zügig ein. Nun holst du die geschlagene
+                    Sahne aus dem Kühlschrank und hebst sie vorsichtig mit einem Löffel
+                    oder Teigschaber unter den Schoko-Ei-Mix. Danach ist der Eischnee dran. Auch den hebst du vorsichtig
+                    unter die Masse. Die fertige Mousse au Chocolat stellst du dann für mindestens zwei Stunden in den
+                    Kühlschrank. Zum Servieren kannst du die Mousse au Chocolat auf kleine Gläschen verteilen und nach
+                    Wunsch mit
+                    geraspelter Schokolade garnieren.
+                </p>
+                <h4 class="headlines4">Empfohlen von:</h4>
+                <div class="profil">
+                    <img class="profil_img" src="./img/profil_img.png" alt="Profilbild">
+                    <p class="profil_name">Radek Gnych</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer_container">
+            <a href="./index.html"><img class="logo_footer" src="./img/logo.png" alt="logo_kochwelt" /></a>
+            <div class="socials_logos">
+                <a href="https://www.facebook.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/instagram.png" alt="instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img class="img_socials_logos" src="./img/twitterx.png"
+                        alt="Twitterx" /></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

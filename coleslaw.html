@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rad-Ops">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Coleslaw-Salat</title>
+    <link rel="icon" type="png" href="./img/logo_small.png" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="global-style.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="img_logo" src="./img/logo.png" alt="logo_kochwelt" />
+            </a>
+            <ul id="openBurger" class="nav_links_ul toggle_burger_menu">
+                <button class="close_button" onclick="toggleBurger()">&#x24E7;</button>
+                <li>
+                    <a class="anchor" href="./index.html">Start</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./pasta.html">Rezept des Tages</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./impressum.html">Impressum</a>
+                </li>
+            </ul>
+            <button id="openButton" class="burger_menu" onclick="toggleBurger()">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_recipe_continer">
+            <section class="section1_recipe">
+                <h2 class="h2_recipe">KFC Coleslaw</h2>
+
+                <img class="recipe_img" src="./img/food-1206771_1280.jpg" alt="salat-coleslaw" />
+
+                <div class="clock_brain_calendar">
+                    <span class="span_clock"><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung" />15 Min.</span>
+                    <span class="span_brain"><img class="time" src="img/brain-solid.svg"
+                            alt="schwierigkeitsgrad" />simpel</span>
+                    <span class="span_calendar"><img class="time" src="img/calendar-alt-regular.svg"
+                            alt="Kalender" />11.10.2025</span>
+                </div>
+            </section>
+
+            <div class="dividing_line"></div>
+
+            <section>
+                <div class="input_portions">
+                    <span class="ingredients_for_portion">Zutaten für</span><input type="number" step="1" max="20"
+                        min="1" value="1" required />
+                    <button class="main_button">Portionen</button>
+                </div>
+                <table>
+                    <tbody>
+                        <tr class="table_white">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>800</td>
+                            <td>g &nbsp;Weißkohl</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>1</td>
+                            <td>&nbsp;mittel-große Karotte(n)</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>1</td>
+                            <td>&nbsp;Zwiebel(n) klein</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>65</td>
+                            <td>g&nbsp; Zucker (weiß)</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>0.5</td>
+                            <td>&nbsp;TL Salz</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>0.13</td>
+                            <td>&nbsp;TL Pfeffer, schwarz</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>60</td>
+                            <td>ml&nbsp; Milch</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>125</td>
+                            <td>g&nbsp;Mayonnaise</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>60</td>
+                            <td>&nbsp;ml Buttermilch</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>1.5 </td>
+                            <td>EL &nbsp;Weißweinessig</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>2.5</td>
+                            <td>EL&nbsp; Zitronensaft (frisch)</td>
+                        </tr>
+                        <tr class="table_white">
+                            <td>0.25</td>
+                            <td>TL&nbsp; Paprikapulver</td>
+                        </tr>
+                        <tr class="table_gray">
+                            <td>0.5</td>
+                            <td>TL&nbsp; Senf (optional)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="h3_recipe">Zubereitung</h3>
+                <div class="preparation_time">
+                    <span class="span_clock"><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung span_clock" />15 Min.</span>
+                    <span class="preparation_clock span_clock "><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung" />15 Std. 30 Min.</span>
+                    <span class="preparation_clock span_clock"><img class="time" src="img/clock-regular.svg"
+                            alt="Zeit für die zubereitung" />15 Std.Ruhezeit</span>
+                </div>
+                <p class="p_preparation">Weißkohl, Karotte und Zwiebel in feine und sehr dünne, ca. 2,5 cm lange
+                    Streifen schneiden, entweder
+                    von Hand oder auch in einem Food Processor.
+                    In einer großen Schüssel Weißkohl, Karotte und Zwiebel vermengen. Die restlichen Zutaten in einer
+                    anderen Schüssel gut vermischen, evtl. den Senf auch mit hinzufügen. Danach über die
+                    Weißkohlmischung gießen. Abschmecken.
+                    Die Schüssel abdecken und den Coleslaw zum Durchziehen mindestens 8 Stunden, am besten jedoch 12 bis
+                    15 Stunden, in den Kühlschrank stellen, damit sich alle Zutaten bestens verbinden. Zum Servieren 1/2
+                    Stunde vorher aus dem Kühlschrank nehmen.
+                    Der Coleslaw passt am besten als Beilage zu Hamburgern, Pulled Pork, Hot Dogs, gegrilltem
+                    Schweinefleisch und Geflügel und natürlich zum BBQ.
+                </p>
+                <h4 class="headlines4">Empfohlen von:</h4>
+                <div class="profil">
+                    <img class="profil_img" src="./img/profil_img.png" alt="Profilbild">
+                    <p class="profil_name">Radek Gnych</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer_container">
+            <a href="./index.html"><img class="logo_footer" src="./img/logo.png" alt="logo_kochwelt" /></a>
+            <div class="socials_logos">
+                <a href="https://www.facebook.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/instagram.png" alt="instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img class="img_socials_logos" src="./img/twitterx.png"
+                        alt="Twitterx" /></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rad-Ops">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Kontakt</title>
+    <link rel="icon" type="png" href="./img/logo_small.png" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+    <link rel="stylesheet" href="global-style.css" />
+    <script defer src="burger-menu.js"></script>
+    <script defer src="contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="img_logo" src="./img/logo.png" alt="logo_kochwelt" />
+            </a>
+            <ul id="openBurger" class="nav_links_ul toggle_burger_menu">
+                <button class="close_button" onclick="toggleBurger()">&#x24E7;</button>
+                <li>
+                    <a class="anchor" href="./index.html">Start</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./pasta.html">Rezept des Tages</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./Impressum.html">Impressum</a>
+                </li>
+            </ul>
+            <button id="openButton" class="burger_menu" onclick="toggleBurger()">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <main>
+        <form onsubmit="sendMail(event)">
+            <label>
+                Your Name:
+                <input type="text" name="name">
+            </label>
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+
+        </form>
+    </main>
+    <footer>
+
+        <div class="footer_container">
+            <a href="./index.html"><img class="logo_footer" src="./img/logo.png" alt="logo_kochwelt" /></a>
+            <div class="socials_logos">
+                <a href="https://www.facebook.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/instagram.png" alt="instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img class="img_socials_logos" src="./img/twitterx.png"
+                        alt="Twitterx" /></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

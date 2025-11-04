@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rad-Ops">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Kochwelt-Project</title>
+    <link rel="icon" type="png" href="./img/logo_small.png" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+    <link rel="stylesheet" href="global-style.css" />
+    <script defer src="burger-menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="img_logo" src="./img/logo.png" alt="logo_kochwelt" />
+            </a>
+            <ul id="openBurger" class="nav_links_ul toggle_burger_menu">
+                <button class="close_button" onclick="toggleBurger()">&#x24E7;</button>
+                <li>
+                    <a class="anchor" href="./index.html">Start</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./pasta.html">Rezept des Tages</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./Impressum.html">Impressum</a>
+                </li>
+            </ul>
+            <button id="openButton" class="burger_menu" onclick="toggleBurger()">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_container">
+            <section class="section1_style">
+
+                <div class="section1_img_and_text img_left img_right">
+
+                    <img class="section1_img" src="./img/pasta-712664_1280.jpg" alt="image_Spaghetti_Carbonara" />
+
+                    <div class="h2_text_button">
+                        <h2 class="h2_pasta_header">Spaghetti Carbonara</h2>
+
+                        <ul class="ul_main">
+                            <li>
+                                Spaghetti Carbonara - Einfach. Authentisch. Lecker. Spaghetti
+                                Carbonara stammen aus der Region Rom und sind ein echter Klassiker
+                                der italienischen Küche. Mit wenigen Zutaten - Pasta, knuspriger
+                                Speck, Eier, Pecorino und Pfeffer - zauberst du in kurzer Zeit
+                                eine cremige Sauce ohne Sahne. Die Kunst liegt im perfekten
+                                Timing: Die Eier verbinden sich mit dem heißen Nudelwasser und
+                                Speck zu einer samtigen Sauce, die jede Nudel umhüllt. So entsteht
+                                ein herzhaftes Gericht, das schnell geht und immer begeistert.
+                            </li>
+                        </ul>
+                        <a href="./pasta.html"><button class="main_button">
+                                Rezept öffnen </button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section2">
+                <h2 class="h2_section2">Lust auf was Neues?</h2>
+                <div class="section2_container">
+
+
+                    <div class="section2_style">
+
+                        <a href="./moussechocolat.html" class="slider_container">
+                            <img class="slider_img" src="./img/dessert-4034053_1280.jpg" alt="Mousse au Chocolate" />
+                            <span class="anchor_silder">Mousse au Chocolate</span>
+                        </a>
+
+
+
+                        <a href="./coleslaw.html" class="slider_container">
+                            <img class="slider_img " src="./img/food-1206771_1280.jpg" alt="KFC Coleslaw" />
+                            <span class="anchor_silder">KFC Coleslaw</span></a>
+                        </a>
+
+
+
+                        <a href="./kaiserschmarn.html" class="slider_container">
+                            <img class="slider_img " src="./img/kaiserschmarrn-609801_1280.jpg" alt="Kaiserschmarrn" />
+                            <span class="anchor_silder">Kaiserschmarrn</span>
+                        </a>
+
+                        <a href="./chicken.html" class="slider_container">
+                            <img class="slider_img " src="./img/chicken-6295945_1280.jpg"
+                                alt="Hähnchengeschnetzeltes mit Reis" />
+                            <span class="anchor_silder">Hähnchengeschnetzeltes</span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section3_style">
+                <h2 class="h2_section3">Air Fryer vs Backofen - Was ist besser?</h2>
+
+                <div class="fryer_vs_backofen">
+                    <ul>
+                        <h3>Heißluftfritteuse (Air Fryer)</h3>
+                        <li>
+                            <strong>Was es ist:</strong> Kleiner Konvektionsofen, der heiße
+                            Luft zirkuliert.
+                        </li>
+                        <li>
+                            <strong>Vorteile:</strong> Schnell (heißt schnell auf, gart
+                            schnell), macht Speisen sehr knusprig mit wenig Öl (wie Pommes,
+                            Chicken Wings), energieeffizient für kleine Mengen.
+                        </li>
+                        <li>
+                            <strong>Nachteile:</strong> Kleine Kapazität (nicht für große
+                            Mengen), kann bei Überfüllung ungleichmäßig garen.
+                        </li>
+                        <li>
+                            <strong>Ideal für:</strong> Schnelle, knusprige Gerichte für 1-2
+                            Personen.
+                        </li>
+
+                        <h3>Backofen:</h3>
+                        <li>
+                            <strong>Was es ist:</strong> Großer Garraum, der mit
+                            Heizelementen erwärmt wird (oft mit Umluftfunktion). Vorteile:
+                            Große Kapazität (für Braten, Aufläufe, Kuchen, mehrere
+                            Gerichte), sehr vielseitig (backen, braten, schmoren), gart
+                            gleichmäßig.
+                        </li>
+                        <li>
+                            <strong>Nachteile:</strong> Längere Aufheizzeit, höherer
+                            Energieverbrauch für kleine Mengen, nimmt mehr Platz ein.
+                        </li>
+
+                        <li>
+                            <strong>Ideal für:</strong> Große Mengen, Familienessen, Backen
+                            und vielseitiges Kochen.
+                        </li>
+                        <li>
+                            <strong>Fazit:</strong> Die Heißluftfritteuse ist perfekt für
+                            schnelle, knusprige Kleinigkeiten, während der Backofen <br />
+                            für große Mengen und vielfältige Gerichte unerlässlich ist. Sie
+                            ergänzen sich gut.
+                        </li>
+                    </ul>
+
+                    <img class="img_fryer" src="img/IMG_air-fryer.png" alt="img_air-fryer" />
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer_container">
+            <a href="./index.html"><img class="logo_footer" src="./img/logo.png" alt="logo_kochwelt" /></a>
+            <div class="socials_logos">
+                <a href="https://www.facebook.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/instagram.png" alt="instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img class="img_socials_logos" src="./img/twitterx.png"
+                        alt="Twitterx" /></a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
