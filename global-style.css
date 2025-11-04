@@ -456,6 +456,119 @@ li
 
 
 
+
+/* contact.html */
+.main_contact
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_contact_container
+{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+
+form
+{
+    width: 420px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-radius: 50px;
+    gap: px;
+    background: linear-gradient(45deg, rgba(165, 149, 1, 0.322), rgb(252, 80, 1));
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-family: "Raleway";
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+.contact_input
+{
+    display: flex;
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Raleway";
+    padding: 8px;
+
+}
+
+
+textarea
+{
+    display: flex;
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Raleway";
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    resize: none;
+
+}
+
+h4
+{
+    display: flex;
+    font-size: 24px;
+    color: black;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/* contect.tml end */
+
+
+/* impressum.html */
+
+.table_impressum
+{
+    display: flex;
+    align-items: center;
+}
+
+.h1_impressum
+{
+    margin-bottom: 60px;
+}
+
+.source
+{
+    color: gray;
+    text-decoration: none;
+}
+
+.source:hover
+{
+    color: brown;
+}
+
+/* impressum.html end */
+
+
+
+
+
 @media (max-width: 1089px)
 {
     .slider_img
@@ -833,5 +946,64 @@ li
         gap: 10px;
         margin-bottom: 24px;
     }
+
+    /* recipe end */
+
+
+
+
+    /* @madia contact.html */
+    form
+    {
+        width: 320px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-style: none;
+        border-radius: 50px;
+        gap: 20px;
+        background: linear-gradient(45deg, rgba(165, 149, 1, 0.322), rgb(252, 80, 1));
+        box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Raleway";
+        color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+
+    }
+
+
+    .contact_input
+    {
+        display: flex;
+        width: 230px;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: "Raleway";
+        padding: 8px;
+
+    }
+
+
+    textarea
+    {
+        display: flex;
+        width: 230px;
+        height: 220px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: "Raleway";
+        padding: 8px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        resize: none;
+
+    }
+
+    /* @medi contact.html end */
 
 }

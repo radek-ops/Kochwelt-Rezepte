@@ -10,8 +10,17 @@ function sendMail(event) {
             'Accept': 'application/json'
         }
     }).then(() => {
-        window.location.href = "./send_mail.html";
+        const transmit = document.getElementById("transmit");
+        if (transmit) {
+            transmit.innerHTML = 'Erfolgreich gesendet !'
+        }
+        setTimeout(() => {
+            window.location.href = "./contact.html?stauts=success";
+        }, 3000);
     }).catch((error) => {
         console.log(error);
+        transmit.innerHTML = 'Fehler beim Senden';
     });
 }
+
+

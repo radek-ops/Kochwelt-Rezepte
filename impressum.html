@@ -4,34 +4,122 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rad-Ops">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <title>Impressum</title>
     <link rel="icon" type="png" href="./img/logo_small.png" />
     <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="global-style.css" />
-    <script src="header_footer.js" defer></script>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="global-style.css">
+    <script defer src="./burger-menu.js"></script>
 </head>
 
 <body>
-
-    <div id="header_content"></div>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="img_logo" src="./img/logo.png" alt="logo_kochwelt" />
+            </a>
+            <ul id="openBurger" class="nav_links_ul toggle_burger_menu">
+                <button class="close_button" onclick="toggleBurger()">&#x24E7;</button>
+                <li>
+                    <a class="anchor" href="./index.html">Start</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./pasta.html">Rezept des Tages</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a class="anchor" href="./impressum.html">Impressum</a>
+                </li>
+            </ul>
+            <button id="openButton" class="burger_menu" onclick="toggleBurger()">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
+        </nav>
+    </header>
 
     <main>
+        <table class="table_impressum">
+            <tr>
+                <th>
+                    <h1 class="h1_impressum">Impressum</h1>
+                </th>
+            </tr>
+            <tr>
+                <td>Radek Gnych</td>
+            </tr>
+            <tr>
+                <td>Schwalbenweg1b</td>
+            </tr>
+            <tr>
+                <td>21481 Lauenbur/Elbe</td>
+            </tr>
+            <tr>
+                <td>E-Mail:<a class="source" href="mailto:" radekgnych@gmail.com id="mail">
+                        radekgnych@gmail.com
+                    </a></td>
+            </tr>
+            <tr>
+                <td>Quelle:<a class="source" href="https://www.e-recht24.de/impressum-generator.html">
+                        www.e-recht24.de/impressum-generator.html
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Quellenangabe der Bilder:</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="source"
+                        href="https://pixabay.com/de/photos/kaiserschmarrn-essen-lecker-s%c3%bc%c3%9f-609801/">Image-Kaiserschmarrn</a>
+                </td>
+            </tr>
+            <tr>
+                <td> <a class="source"
+                        href="https://pixabay.com/de/photos/pasta-carbonara-spaghetti-712664/">Image-Pasta-Carbonara</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="source"
+                        href="https://pixabay.com/de/photos/mousse-au-chocolat-aquafaba-vegan-2635500/">Image-Mousse-au-Chocolat</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="source"
+                        href="https://pixabay.com/de/photos/h%c3%a4hnchen-brokkoli-reis-teriyaki-6295945/">Image-Hänchengeschnezeltes</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="source"
+                        href="https://pixabay.com/de/photos/lebensmittel-krautsalat-gabel-1206771/">Image-Colesiaw</a>
+                </td>
+            </tr>
 
 
-        <!-- footer imgs -->
-        <h3> Bilder Downloads </h3>
-        <div class="bilder_link">
-            <!--
-<a class="bilder_link" target="_blank" href="https://icons8.com/icon/phOKFKYpe00C/x">Icon von Twitterx</a>
- 
-<a class="bilder_link" target="_blank" href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram">Icon von Instagram</a>
- 
-<a class="bilder_link" target="_blank" href="https://icons8.com/icon/13912/facebook">Icon von Facebook</a>
--->
-        </div>
+        </table>
+
+
+
     </main>
-    <footer id="footer_content"></footer>
+
+    <footer>
+        <div class="footer_container">
+            <a href="./index.html"><img class="logo_footer" src="./img/logo.png" alt="logo_kochwelt" /></a>
+            <div class="socials_logos">
+                <a href="https://www.facebook.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img_socials_logos"
+                        src="img/instagram.png" alt="instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img class="img_socials_logos" src="./img/twitterx.png"
+                        alt="Twitterx" /></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -44,23 +44,24 @@
     </header>
 
 
-    <main>
-        <form onsubmit="sendMail(event)">
-            <label>
-                Your Name:
-                <input type="text" name="name">
-            </label>
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-
-            <button type="submit">Send</button>
-
+    <main class="main_contact">
+        <div class="main_contact_container">
+            <form onsubmit="sendMail(event)">
+                <label>
+                    Dein Name:
+                    <input class="contact_input" type="text" name="name" placeholder="Jon Doe" required>
+                </label>
+                <label>
+                    Deine Email:
+                    <input class="contact_input" type="email" name="email" placeholder="max@mustermann.de">
+                </label>
+                <label>
+                    Deine Nachricht:
+                    <textarea name="message" required placeholder="Tippe hier deine Nachricht "></textarea>
+                </label>
+                <h4 id="transmit"></h4>
+                <button type="submit" class="main_button">Send</button>
+        </div>
         </form>
     </main>
     <footer>
