@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="recipes.css">
     <link rel="stylesheet" href="global-style.css">
     <script defer src="./burger-menu.js"></script>
+    <script defer src="coleslaw.js"></script>
 </head>
 
 <body>
@@ -63,67 +64,70 @@
             <div class="dividing_line"></div>
 
             <section>
-                <div class="input_portions">
-                    <span class="ingredients_for_portion">Zutaten für</span><input type="number" step="1" max="20"
-                        min="1" value="1" required />
-                    <button class="main_button">Portionen</button>
-                </div>
+
+                <form class="input_portions">s
+                    <label class="ingredients_for_portion" for="portion">
+                        Zutaten für</label>
+                    <input id="portion" name="portion" type="number" step="1" max="20" min="1" value="1" required
+                        title="Keine Kommas oder Punkte erlaubt" />
+                    <button type="button" class="main_button" onclick="portionCalculation()">Portionen</button>
+                </form>
                 <table>
                     <tbody>
                         <tr class="table_white">
-                            <td></td>
-                            <td></td>
+                            <td id="error"></td>
+
                         </tr>
                         <tr class="table_gray">
-                            <td>800</td>
+                            <td class="sum">800</td>
                             <td>g &nbsp;Weißkohl</td>
                         </tr>
                         <tr class="table_white">
-                            <td>1</td>
+                            <td class="sum">1</td>
                             <td>&nbsp;mittel-große Karotte(n)</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>1</td>
+                            <td class="sum">1</td>
                             <td>&nbsp;Zwiebel(n) klein</td>
                         </tr>
                         <tr class="table_white">
-                            <td>65</td>
+                            <td class="sum">65</td>
                             <td>g&nbsp; Zucker (weiß)</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>0.5</td>
+                            <td class="sum">0.5</td>
                             <td>&nbsp;TL Salz</td>
                         </tr>
                         <tr class="table_white">
-                            <td>0.13</td>
+                            <td class="sum">0.16</td>
                             <td>&nbsp;TL Pfeffer, schwarz</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>60</td>
+                            <td class="sum">60</td>
                             <td>ml&nbsp; Milch</td>
                         </tr>
                         <tr class="table_white">
-                            <td>125</td>
+                            <td class="sum">125</td>
                             <td>g&nbsp;Mayonnaise</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>60</td>
+                            <td class="sum">60</td>
                             <td>&nbsp;ml Buttermilch</td>
                         </tr>
                         <tr class="table_white">
-                            <td>1.5 </td>
+                            <td class="sum">1.5 </td>
                             <td>EL &nbsp;Weißweinessig</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>2.5</td>
+                            <td class="sum">2.5</td>
                             <td>EL&nbsp; Zitronensaft (frisch)</td>
                         </tr>
                         <tr class="table_white">
-                            <td>0.25</td>
+                            <td class="sum">0.25</td>
                             <td>TL&nbsp; Paprikapulver</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>0.5</td>
+                            <td class="sum">0.5</td>
                             <td>TL&nbsp; Senf (optional)</td>
                         </tr>
                     </tbody>

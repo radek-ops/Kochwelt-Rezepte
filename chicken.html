@@ -63,11 +63,13 @@
             <div class="dividing_line"></div>
 
             <section>
-                <div class="input_portions">
-                    <span class="ingredients_for_portion">Zutaten für</span><input type="number" step="1" max="20"
-                        min="1" value="1" required />
+                <form class="input_portions">
+                    <label for="portion" class="ingredients_for_portion">Zutaten für</label>
+                    <input id="portion" type="number" step="1" max="20" min="1" value="1" required pattern="[^.,]*"
+                        title="Keine Kommas oder Punkte erlaubt" />
+
                     <button class="main_button">Portionen</button>
-                </div>
+                </form>
                 <table>
                     <tbody>
                         <tr class="table_white">

@@ -477,7 +477,7 @@ li
 }
 
 
-form
+.form_contact
 {
     width: 420px;
     height: 600px;
@@ -530,10 +530,7 @@ textarea
 h4
 {
     display: flex;
-    font-size: 24px;
     color: black;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
 }
 
 /* contect.tml end */
@@ -953,7 +950,7 @@ h4
 
 
     /* @madia contact.html */
-    form
+    .form_contact
     {
         width: 320px;
         height: 600px;
