@@ -10,7 +10,7 @@ function portionCalculation() {
 
 
     if (portion <= 0 || portion >= 21) {
-        s
+
         let error = document.getElementById('error');
         error.style.color = 'red';
         return error.innerHTML = 'Fehler: Geben Sie eine Ganzzahl zwischen 1-20 ein.';
@@ -26,11 +26,19 @@ function portionCalculation() {
             let element = quantity[index];
             let newCalculation = element * parseInt(portion);
             sum[index].innerHTML = newCalculation;
-            console.log(sum);
+
+            if (index === 5) {
+
+                sum[index].innerHTML = newCalculation.toFixed(2);
+            }
+
+            else {
+
+                sum[index].innerHTML = newCalculation.toFixed(0);
+            }
 
         }
     }
-
 
     else {
         let error = document.getElementById('error');
