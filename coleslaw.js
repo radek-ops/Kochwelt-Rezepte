@@ -18,7 +18,6 @@ function portionCalculation() {
 
 
     if (portion == parseInt(portion)) {
-        portion.innerHTML = '';
         error.innerHTML = '';
         error.style.color = '';
 

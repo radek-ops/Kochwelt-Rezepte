@@ -533,7 +533,7 @@ h4
     color: black;
 }
 
-/* contect.tml end */
+/* contact.tml end */
 
 
 /* impressum.html */
@@ -547,6 +547,8 @@ h4
 .h1_impressum
 {
     margin-bottom: 60px;
+    display: flex;
+
 }
 
 .source

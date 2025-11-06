@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="recipes.css">
     <link rel="stylesheet" href="global-style.css">
     <script defer src="./burger-menu.js"></script>
+    <script defer src="chicken.js"></script>
 </head>
 
 <body>
@@ -65,51 +66,51 @@
             <section>
                 <form class="input_portions">
                     <label for="portion" class="ingredients_for_portion">Zutaten für</label>
-                    <input id="portion" type="number" step="1" max="20" min="1" value="1" required pattern="[^.,]*"
+                    <input id="portion" type="number" step="1" max="20" min="1" value="1"
                         title="Keine Kommas oder Punkte erlaubt" />
 
-                    <button class="main_button">Portionen</button>
+                    <button type="button" class="main_button" onclick="portionCalculation()">Portionen</button>
                 </form>
                 <table>
                     <tbody>
                         <tr class="table_white">
-                            <td></td>
-                            <td></td>
+                            <td id="error"></td>
+
                         </tr>
                         <tr class="table_gray">
-                            <td>500</td>
+                            <td class="sum">500</td>
                             <td>g &nbsp; Putenfleisch (geschnetzelt)</td>
                         </tr>
                         <tr class="table_white">
-                            <td>1</td>
+                            <td class="sum">1</td>
                             <td>EL&nbsp; Butterschmalz</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>2</td>
+                            <td class="sum">2</td>
                             <td>&nbsp; Zwiebel(n) gewürfelt</td>
                         </tr>
                         <tr class="table_white">
-                            <td>2</td>
+                            <td class="sum">2</td>
                             <td>EL&nbsp; Mehl</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>2 </td>
+                            <td class="sum">2 </td>
                             <td> EL &nbsp; Tomatenmark</td>
                         </tr>
                         <tr class="table_white">
-                            <td>2</td>
+                            <td class="sum">2</td>
                             <td>EL&nbsp;Currypulver</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>500</td>
+                            <td class="sum">500</td>
                             <td>ml&nbsp; Rinderbrühe (heiße)</td>
                         </tr>
                         <tr class="table_white">
-                            <td>150</td>
+                            <td class="sum">150</td>
                             <td>g&nbsp; Crème fraîche</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>100</td>
+                            <td class="sum">100</td>
                             <td>g&nbsp;Joghurt 1,5 %ig</td>
                         </tr>
                     </tbody>
