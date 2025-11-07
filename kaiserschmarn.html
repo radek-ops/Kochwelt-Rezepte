@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="recipes.css">
     <link rel="stylesheet" href="global-style.css">
     <script defer src="./burger-menu.js"></script>
+    <script defer src="kaiserschmarrn.js"></script>
 </head>
 
 <body>
@@ -67,47 +68,49 @@
                     <label form="portion" class="ingredients_for_portion">Zutaten für</label>
                     <input id="portion" type="number" step="1" max="20" min="1" value="1" required pattern="[^.,]*"
                         title="Keine Kommas oder Punkte erlaubt" />
-                    <button class="main_button">Portionen</button>
+                    <button onclick="portionCalculation()" type="button" class="main_button">Portionen</button>
                 </form>
                 <table>
                     <tbody>
                         <tr class="table_white">
-                            <td></td>
-                            <td></td>
+                            <td id="error"></td>
+
                         </tr>
                         <tr class="table_gray">
-                            <td>130</td>
+                            <td class="sum">130</td>
                             <td>g &nbsp;Mehl</td>
                         </tr>
                         <tr class="table_white">
-                            <td>250</td>
+                            <td class="sum">250</td>
                             <td>ml &nbsp; Milch</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>1</td>
+                            <td class="sum">1</td>
                             <td>EL&nbsp;Vanillezucker</td>
-                        </tr>
+
                         <tr class="table_white">
-                            <td>Prise Salz</td>
+                            <td class="sum">1</td>
+                            <td>x&nbsp;Prise Salz</td>
                         </tr>
+
                         <tr class="table_gray">
-                            <td>4</td>
+                            <td class="sum">4</td>
                             <td>&nbsp;Eigelb</td>
                         </tr>
                         <tr class="table_white">
-                            <td>4</td>
+                            <td class="sum">4</td>
                             <td>&nbsp;Eiweiß</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>50</td>
+                            <td class="sum">50</td>
                             <td>g&nbsp; Zucker</td>
                         </tr>
                         <tr class="table_white">
-                            <td>50</td>
+                            <td class="sum">50</td>
                             <td>g&nbsp;Butter</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>50</td>
+                            <td class="sum">50</td>
                             <td>g&nbsp;Rosinen</td>
                         </tr>
                         <tr class="table_white">

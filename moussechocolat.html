@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="recipes.css">
     <link rel="stylesheet" href="global-style.css">
     <script defer src="./burger-menu.js"></script>
+    <script defer src="moussechocolat.js"></script>
 </head>
 
 <body>
@@ -67,30 +68,28 @@
                     <label for="portion" class="ingredients_for_portion">Zutaten für</label>
                     <input id="portion" type="number" step="1" max="20" min="1" value="1" required pattern="[^.,]*"
                         title="Keine Kommas oder Punkte erlaubt" />
-                    <button class="main_button">Portionen</button>
+                    <button onclick="portionCalculation()" type="button" class="main_button">Portionen</button>
                 </form>
                 <table>
                     <tbody>
                         <tr class="table_white">
-                            <td></td>
-                            <td></td>
+                            <td id="error"></td>
+
                         </tr>
                         <tr class="table_gray">
-                            <td>200</td>
+                            <td class="sum">200</td>
                             <td>g &nbsp; Bitterschokolade (75%Kakaoanteil)</td>
                         </tr>
                         <tr class="table_white">
-                            <td>2</td>
+                            <td class="sum">2</td>
                             <td>&nbsp;Eier</td>
                         </tr>
                         <tr class="table_gray">
-                            <td>200</td>
+                            <td class="sum">200</td>
                             <td>g&nbsp; Schlagsahne</td>
                         </tr>
                         <tr class="table_white">
                             <td>Prise Salz</td>
-
-
                         </tr>
                         <tr class="table_gray">
                             <td>Schokolade zum Raspeln (optimal)</td>
