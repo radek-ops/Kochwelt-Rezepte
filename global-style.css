@@ -107,7 +107,7 @@ nav
     text-decoration: none;
 }
 
-/* bürger menu */
+/* style burger menu */
 
 .burger_menu
 {
@@ -139,8 +139,10 @@ nav
     display: none;
 }
 
+/* style burger menu end */
 
-/* main */
+
+
 
 main
 {
@@ -160,7 +162,6 @@ main
     overflow: hidden;
 }
 
-/* section 1 */
 
 .section1_style
 {
@@ -244,7 +245,7 @@ h2
     flex-direction: column;
 }
 
-/* section 2 */
+
 
 .section2
 {
@@ -344,7 +345,7 @@ h2
     text-overflow: ellipsis;
 }
 
-/* section 3 */
+
 
 .h2_section3
 {
@@ -457,7 +458,7 @@ li
 
 
 
-/* contact.html */
+/*  style contact.html */
 .main_contact
 {
     width: 100%;
@@ -533,10 +534,10 @@ h4
     color: black;
 }
 
-/* contact.tml end */
+/*  style contact.html end */
 
 
-/* impressum.html */
+/* style impressum.html */
 
 .table_impressum
 {
@@ -562,8 +563,7 @@ h4
     color: brown;
 }
 
-/* impressum.html end */
-
+/* style impressum.html end */
 
 
 
@@ -795,7 +795,7 @@ h4
         color: var(--white-color);
     }
 
-    /* @media recipe */
+    /* style @media recipes */
 
     .ingredients_for_portion
     {
@@ -828,6 +828,7 @@ h4
         font-size: 16px;
     }
 
+    /* style @media recipes end */
 }
 
 
@@ -946,7 +947,7 @@ h4
         margin-bottom: 24px;
     }
 
-    /* recipe end */
+    /*  @medi recipe end */
 
 
 
