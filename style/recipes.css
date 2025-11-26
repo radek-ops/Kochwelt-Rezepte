@@ -1,0 +1,293 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url(./font/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(./font/Raleway-VariableFont_wght.ttf);
+}
+
+
+:root
+{
+    --table-color: rgba(239, 239, 239);
+    --border-color: rgba(239, 239, 239, 1);
+    --button-color: rgba(0, 128, 0);
+    --font-color: rgba(168, 163, 163);
+    --white-color: rgba(255, 255, 255);
+    --black-color: rgba(0, 0, 0);
+    --background-color: rgba(235, 231, 231);
+    --background-color-footer: rgba(63, 62, 62);
+    --background-color-closeButton: rgb(0, 0, 0, 0);
+    --background-color-nav_link_ul: rgb(0, 0, 0, 0.9);
+}
+
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+
+
+body
+{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.main_recipe_continer
+{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* section 1 rezept */
+
+.section1_recipe
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.h2_recipe
+{
+    margin-top: 114px;
+    margin-bottom: 30px;
+}
+
+
+.recipe_img
+{
+    width: 100%;
+    max-width: 1440px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.clock_brain_calendar
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family: 'Raleway';
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+
+.time
+{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-color: var(--table-color);
+    margin-top: 2px;
+}
+
+
+.span_clock
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--table-color);
+    width: 100px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 8px;
+    padding: 5px;
+    gap: 10px;
+    font-size: 18px;
+}
+
+
+.span_brain
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--table-color);
+    width: 90px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 8px;
+    padding: 5px;
+    gap: 10px;
+}
+
+
+.span_calendar
+{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--table-color);
+    width: 130px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 8px;
+    padding: 6px;
+    gap: 16px;
+}
+
+
+.dividing_line
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.input_portions
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.ingredients_for_portion
+{
+    padding-right: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+
+input
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 220px;
+    height: 38px;
+    border-radius: 10px 0 0 10px;
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    border-color: var(--border-color);
+    text-align: center;
+}
+
+
+table
+{
+    display: flex;
+}
+
+
+tbody
+{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+
+.table_gray
+{
+    display: flex;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 16px 0 10px 24px;
+}
+
+
+.table_white
+{
+    display: flex;
+    padding: 16px 0px 10px 24px;
+}
+
+
+p
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.h3_recipe
+{
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+
+
+.preparation_time
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    white-space: nowrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 24px;
+}
+
+
+.preparation_clock
+{
+    display: flex;
+    gap: 8px;
+    background-color: var(--table-color);
+    width: 170px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+
+.p_preparation
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+
+h4
+{
+    margin-left: 30px;
+}
+
+
+.profil
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    gap: 40px;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.profil_img
+{
+    width: 96px;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
