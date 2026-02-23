@@ -1,0 +1,23 @@
+.table_impressum
+{
+    display: flex;
+    align-items: center;
+}
+
+.h1_impressum
+{
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.source
+{
+    color: gray;
+    text-decoration: none;
+}
+
+.source:hover
+{
+    color: brown;
+}
+

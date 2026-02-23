@@ -1,7 +1,9 @@
 @font-face
 {
-    src: url(./font/Raleway-Italic-VariableFont_wght.ttf);
-    src: url(./font/Raleway-VariableFont_wght.ttf);
+    src: url(../fonts/Raleway.woff2) format('woff2');
+    src: url(../fonts/Raleway.Italic.woff2) format('woff2');
+    src: url(../fonts/Raleway.Light.woff2) format('woff2');
+    src: url(../fonts/Raleway.Regular.woff2) format('woff2');
     font-family: "Raleway";
 }
 
@@ -19,22 +21,13 @@
     --background-color-nav_link_ul: rgb(0, 0, 0, 0.9);
 }
 
-
 html
 {
     scroll-behavior: smooth;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Raleway";
 }
-
-
-*,
-*::before,
-*::after
-{
-    box-sizing: inherit;
-}
-
 
 body
 {
@@ -44,7 +37,6 @@ body
     margin: 0;
 }
 
-
 header
 {
     width: 100%;
@@ -53,7 +45,6 @@ header
     align-items: center;
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 nav
 {
@@ -66,7 +57,6 @@ nav
     gap: 10px;
 }
 
-
 .img_logo
 {
     width: 400px;
@@ -74,7 +64,6 @@ nav
     cursor: pointer;
     margin-left: 30px;
 }
-
 
 .nav_links_ul
 {
@@ -89,7 +78,6 @@ nav
     overflow: hidden;
 }
 
-
 .anchor
 {
     color: var(--black-color);
@@ -99,50 +87,12 @@ nav
     text-decoration: none;
 }
 
-
 .anchor:hover
 {
     color: var(--button-color);
     box-shadow: 0px 8px 0px 0px;
     text-decoration: none;
 }
-
-/* style burger menu */
-
-.burger_menu
-{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    width: 60px;
-    height: 45px;
-    gap: 5px;
-    border-style: none;
-    background-color: var(--white-color);
-    margin-top: 35px;
-    margin-right: 30px;
-}
-
-
-.burger_line
-{
-    display: flex;
-    background-color: var(--black-color);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 16px;
-}
-
-
-.close_button
-{
-    display: none;
-}
-
-/* style burger menu end */
-
-
-
 
 main
 {
@@ -152,7 +102,6 @@ main
     min-height: 100vh;
 }
 
-
 .main_container
 {
     width: 100%;
@@ -161,7 +110,6 @@ main
     align-items: center;
     overflow: hidden;
 }
-
 
 .section1_style
 {
@@ -177,7 +125,6 @@ main
     margin-right: 0px;
 }
 
-
 .section1_img
 {
     display: flex;
@@ -190,12 +137,10 @@ main
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
-
 .h2_pasta_header
 {
     margin-bottom: 16px;
 }
-
 
 h2
 {
@@ -206,7 +151,6 @@ h2
     margin-inline-end: 0px;
     font-family: "Raleway";
 }
-
 
 .ul_main
 {
@@ -219,14 +163,12 @@ h2
     margin-bottom: 8px;
 }
 
-
 .section1_img_and_text
 {
     width: 100%;
     display: flex;
     box-sizing: border-box
 }
-
 
 .main_button
 {
@@ -238,14 +180,11 @@ h2
     font-size: 18px;
 }
 
-
 .h2_text_button
 {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .section2
 {
@@ -257,7 +196,6 @@ h2
     background-color: var(--background-color);
 }
 
-
 .h2_section2
 {
     display: flex;
@@ -266,14 +204,12 @@ h2
     margin: 40px 0 40px 0;
 }
 
-
 .section2_container
 {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 
 .section2_style
 {
@@ -286,7 +222,6 @@ h2
     padding-left: 30px;
     padding-right: 30px;
 }
-
 
 .slider_img
 {
@@ -301,30 +236,25 @@ h2
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
-
 .img_right
 {
     margin-right: 30px;
 }
-
 
 .img_left
 {
     margin-left: 30px;
 }
 
-
 .slider_img:hover
 {
     transform: scale(1.1);
 }
 
-
 .slider_container
 {
     text-decoration: none;
 }
-
 
 .section3_style
 {
@@ -332,7 +262,6 @@ h2
     align-items: center;
     flex-direction: column;
 }
-
 
 .anchor_silder
 {
@@ -345,8 +274,6 @@ h2
     text-overflow: ellipsis;
 }
 
-
-
 .h2_section3
 {
     display: flex;
@@ -355,12 +282,10 @@ h2
     margin: 40px 0 40px 0;
 }
 
-
 h3
 {
     font-size: 20px;
 }
-
 
 .fryer_vs_backofen
 {
@@ -369,7 +294,6 @@ h3
     display: flex;
     align-items: flex-start;
 }
-
 
 ul
 {
@@ -383,7 +307,6 @@ ul
     margin-bottom: 115px;
 }
 
-
 .img_fryer
 {
     min-width: 240px;
@@ -394,13 +317,11 @@ ul
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
-
 .text_freyer
 {
     margin-left: 10px;
     margin-right: 60px;
 }
-
 
 footer
 {
@@ -411,14 +332,12 @@ footer
     margin: 0;
 }
 
-
 .logo_footer
 {
     margin-left: 64px;
     display: flex;
     align-items: center;
 }
-
 
 .footer_container
 {
@@ -431,7 +350,6 @@ footer
     margin: 0;
 }
 
-
 .socials_logos
 {
     display: flex;
@@ -442,131 +360,16 @@ footer
 
 }
 
-
 li
 {
     padding-bottom: 8px;
 }
-
 
 .img_socials_logos
 {
     width: 75px;
     height: 75px;
 }
-
-
-
-
-/*  style contact.html */
-.main_contact
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.main_contact_container
-{
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-}
-
-
-.form_contact
-{
-    width: 420px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: none;
-    border-radius: 50px;
-    gap: px;
-    background: linear-gradient(45deg, rgba(165, 149, 1, 0.322), rgb(252, 80, 1));
-    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
-    font-size: 18px;
-    font-family: "Raleway";
-    color: white;
-    margin-left: 30px;
-    margin-right: 30px;
-
-}
-
-
-.contact_input
-{
-    display: flex;
-    width: 350px;
-    height: 35px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: "Raleway";
-    padding: 8px;
-
-}
-
-
-textarea
-{
-    display: flex;
-    width: 350px;
-    height: 220px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: "Raleway";
-    padding: 8px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    resize: none;
-
-}
-
-h4
-{
-    display: flex;
-    color: black;
-}
-
-/*  style contact.html end */
-
-
-/* style impressum.html */
-
-.table_impressum
-{
-    display: flex;
-    align-items: center;
-}
-
-.h1_impressum
-{
-    margin-bottom: 60px;
-    display: flex;
-
-}
-
-.source
-{
-    color: gray;
-    text-decoration: none;
-}
-
-.source:hover
-{
-    color: brown;
-}
-
-/* style impressum.html end */
-
-
-
 
 @media (max-width: 1089px)
 {
@@ -582,12 +385,12 @@ h4
         justify-content: flex-start;
     }
 
-
     .img_fryer
     {
         min-width: 180px;
         height: 180px;
     }
+
 }
 
 @media (max-width: 991px)
@@ -603,7 +406,6 @@ h4
         margin: 22px 0 22px 30px;
     }
 
-
     .anchor
     {
         font-size: 16px;
@@ -615,18 +417,15 @@ h4
         margin-top: 50px;
     }
 
-
     h2
     {
         font-size: 23px;
     }
 
-
     .ul_main
     {
         font-size: 18px;
     }
-
 
     .section1_img_and_text
     {
@@ -636,13 +435,11 @@ h4
         flex-direction: column;
     }
 
-
     .section1_img
     {
         width: 100%;
         max-width: 920px;
     }
-
 
     .section1_style
     {
@@ -650,14 +447,12 @@ h4
         margin-bottom: 40px;
     }
 
-
     .section2
     {
         width: 100%;
         min-height: 650px;
         display: flex;
     }
-
 
     .section2_style
     {
@@ -669,7 +464,6 @@ h4
         gap: 60px;
     }
 
-
     .slider_container
     {
         text-decoration: none;
@@ -679,12 +473,10 @@ h4
         align-items: center;
     }
 
-
     .anchor_silder
     {
         font-size: 16px;
     }
-
 
     .h2_section3
     {
@@ -692,19 +484,16 @@ h4
         margin-right: 30px;
     }
 
-
     .fryer_vs_backofen
     {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-
     .img_fryer
     {
         width: 240px;
     }
-
 
     ul
     {
@@ -714,12 +503,10 @@ h4
         margin-bottom: 24px;
     }
 
-
     .logo_footer
     {
         width: 250px;
     }
-
 
     .img_socials_logos
     {
@@ -732,18 +519,15 @@ h4
 
 @media (max-width: 767px)
 {
-
     .burger_menu
     {
         display: flex;
     }
 
-
     .toggle_burger_menu
     {
         display: flex;
     }
-
 
     .nav_links_ul:not(.toggle_burger_menu)
     {
@@ -751,7 +535,6 @@ h4
         opacity: 1;
         transition: transform 350ms ease-in-out;
     }
-
 
     .close_button
     {
@@ -766,7 +549,6 @@ h4
         border-width: 0px;
         margin-top: 16px;
     }
-
 
     .nav_links_ul
     {
@@ -789,46 +571,11 @@ h4
         transform: translateX(150%);
     }
 
-
     .anchor
     {
         color: var(--white-color);
     }
 
-    /* style @media recipes */
-
-    .ingredients_for_portion
-    {
-        font-size: 18px;
-        white-space: nowrap;
-    }
-
-
-    .clock_brain_calendar
-    {
-        font-size: 16px;
-        white-space: nowrap;
-    }
-
-
-    tbody
-    {
-        font-size: 16px;
-    }
-
-
-    .span_clock
-    {
-        font-size: 16px;
-    }
-
-
-    .p_preparation
-    {
-        font-size: 16px;
-    }
-
-    /* style @media recipes end */
 }
 
 
@@ -845,7 +592,6 @@ h4
         margin: 30px 0 22px 30px;
     }
 
-
     .section2
     {
         width: 100%;
@@ -854,7 +600,6 @@ h4
         flex-direction: column;
         background-color: var(--background-color);
     }
-
 
     .section2_style
     {
@@ -868,7 +613,6 @@ h4
         margin-bottom: 40px;
     }
 
-
     .footer_container
     {
         max-width: 1440px;
@@ -880,7 +624,6 @@ h4
         margin: 0;
     }
 
-
     .logo_footer
     {
         width: 180px;
@@ -889,7 +632,6 @@ h4
         display: flex;
         align-items: center;
     }
-
 
     .socials_logos
     {
@@ -902,107 +644,5 @@ h4
         padding-right: 15px;
     }
 
-
-    /*  @media recipe */
-
-    .clock_brain_calendar
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 10px;
-        font-family: 'Raleway';
-        margin-top: 32px;
-        margin-bottom: 32px;
-        font-size: 16px;
-        white-space: nowrap;
-    }
-
-    input
-    {
-        display: flex;
-        width: 205px;
-        height: 41px;
-        border-radius: 10px 0 0 10px;
-        border-style: solid;
-        border-width: 2px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 21px;
-        font-weight: 500;
-        border-color: var(--border-color);
-    }
-
-    .input_portions
-    {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-
-    .preparation_time
-    {
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 24px;
-    }
-
-    /*  @medi recipe end */
-
-
-
-
-    /* @madia contact.html */
-    .form_contact
-    {
-        width: 320px;
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-style: none;
-        border-radius: 50px;
-        gap: 5px;
-        background: linear-gradient(45deg, rgba(165, 149, 1, 0.322), rgb(252, 80, 1));
-        box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
-        font-size: 16px;
-        font-family: "Raleway";
-        color: white;
-        margin-left: 15px;
-        margin-right: 15px;
-
-    }
-
-
-    .contact_input
-    {
-        display: flex;
-        width: 230px;
-        height: 35px;
-        border-radius: 10px;
-        font-size: 16px;
-        font-family: "Raleway";
-        padding: 8px;
-
-    }
-
-
-    textarea
-    {
-        display: flex;
-        width: 230px;
-        height: 220px;
-        border-radius: 10px;
-        font-size: 16px;
-        font-family: "Raleway";
-        padding: 8px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        resize: none;
-
-    }
-
-    /* @medi contact.html end */
-
+   
 }
