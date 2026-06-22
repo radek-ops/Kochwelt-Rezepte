@@ -1,6 +1,9 @@
-
-
-
+/**
+ * Calculates ingredient quantities based on the number of portions.
+ * Reads the portion value from an input field, validates it (1-20, integer only),
+ * and updates the displayed amounts in the table.
+ * Uses two decimal places for the ingredient at index 5.
+ */
 function portionCalculation() {
 
     let quantity = [800, 1, 1, 65, 0.5, 0.13, 60, 125, 60, 1.5, 2.5, 0.25, 0.5];
@@ -46,23 +49,3 @@ function portionCalculation() {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

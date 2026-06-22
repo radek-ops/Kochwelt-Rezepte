@@ -1,4 +1,9 @@
-
+/**
+ * Handles the contact form submission.
+ * Sends the form data to Formspree, displays a success or error message,
+ * and redirects to the contact page after a short delay on success.
+ * @param {Event} event - The form submit event.
+ */
 function sendMail(event) {
     event.preventDefault();
     const data = new FormData(event.target);
@@ -22,5 +27,3 @@ function sendMail(event) {
         transmit.innerHTML = 'Fehler beim Senden';
     });
 }
-
-
